@@ -9,3 +9,6 @@ gem 'jekyll-less'
 
 # minifying
 gem 'jekyll-press'
+
+# github
+gem 'github-pages'
