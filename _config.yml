@@ -1,0 +1,46 @@
+name: Drummond Lab research
+description: Updates from the Drummond Lab at the University of Chicago
+url: http://dad.github.io
+
+#gems: ['jekyll-less']
+
+markdown: redcarpet
+highlighter: pygments
+permalink: /:categories/:title/
+
+redcarpet: 
+  extensions:
+   - tables
+   - no_intra_emphasis
+   - autolink
+   - superscript
+   - strikethrough
+
+paginate: 6
+paginate_path: "blog/page:num"
+paginate_category: "blog"
+
+exclude:
+  - "*.branches"
+  - "*.kml"
+  - "*.log"
+  - "*.nb"
+  - "*.trees"
+  - "*.cpp"
+  - "*.h"
+  - "*.hh"
+  - "*.java"
+  - "*.jar"
+  - "*.csv"
+  - "*.tsv"
+  - "*.txt"
+  - "*.rb"
+  - "*.py"
+  - "*.class"
+  - "*.tips"
+  - "*.fasta"
+  - "*.nex"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - "Gemfile"
+  - "Gemfile.lock"
