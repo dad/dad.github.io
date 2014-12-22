@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'jekyll'
 
 # compiling less
-gem 'therubyrhino'
+gem 'therubyracer'
 gem 'jekyll-less'
 
 # minifying
