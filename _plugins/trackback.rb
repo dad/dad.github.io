@@ -1,4 +1,4 @@
-# Author: Trevor Bedford
+# Author: D. Allan Drummond
 # License: MIT
 
 # Examples:
