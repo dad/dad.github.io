@@ -1,14 +1,6 @@
 source 'https://rubygems.org'
-
-# jekyll
-gem 'jekyll'
-
-# compiling less
-gem 'therubyracer'
-gem 'jekyll-less'
-
-# minifying
-gem 'jekyll-press'
-
-# github
 gem 'github-pages'
+#gem 'jekyll-sass-converter'
+
+# Avoid polling for changes
+#gem 'wdm', '>= 0.1.0' if Gem.win_platform?
