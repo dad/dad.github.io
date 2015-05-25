@@ -14,16 +14,11 @@ redcarpet:
 # so be sure to set them if your theme uses them.
 #
 title : Drummond Lab
-tagline: Evolution and regulation of protein production and quality control
-institution:
-  url: http://www.uchicago.edu
-  name: The University of Chicago
-department:
-  url: http://bmb.uchospitals.edu
-  name: Biochemistry & Molecular Biology
+tagline: D. Allan Drummond's home site
+
 author :
   name : D. Allan Drummond
-  email : dadrummond@uchicago.edu
+  email : dadrummond@gmail.com
   github : dad
   twitter : dadrummond
 #  feedburner : feedname
@@ -36,7 +31,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://drummondlab.org
+production_url : http://dad.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -111,7 +106,7 @@ JB :
   analytics :
     provider : google
     google : 
-      tracking_id : 'UA-62008526-1'
+      tracking_id : 
     getclicky :
       site_id : 
     mixpanel :

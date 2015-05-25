@@ -1,11 +1,11 @@
-# The Drummond Lab main website
+# Drummond blog
 
 ##
 
 
 ### TODOS
 
-See Issues on [the site](https://github.com/drummondlab/drummondlab.github.io).
+See Issues on [the site](https://github.com/dad/dad.github.io).
 
 ## How to add content
 

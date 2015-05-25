@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Drummond Lab
+title: D. Allan Drummond's Blog
 categories:
  - home
 ---
@@ -28,7 +28,7 @@ categories:
 	  <!-- DAD: this should be dynamically populated. -->
 	  <div class="carousel-inner">
 	    <div class="active item">
-	    	<img src="/assets/themes/blog/images/banner/pab-30min.png" width='1200px' alt="">
+	    	<img src="/assets/themes/blog/images/banner/default.png" width='1200px' alt="">
 	    </div>
 	  </div>
 	  <!-- Carousel nav -->
@@ -57,43 +57,6 @@ categories:
 <div class="hugespacer"></div>
 
 <div class="row">
-	<div class="col-md-4">
-		<div class="head">
-			<a class="off" href="/news/">News</a>
-		</div>
-		<div class="bigspacer"></div>
-		<div class="feedbox pad-left">
-			{% for news in site.categories.news limit:4 %}
-			
-				{% for member in site.categories.team %}
-					{% if member.handle == news.author_handle %}
-						{% assign author = member %}
-					{% endif %}
-				{% endfor %}		
-				
-				<div class="note-title">
-					<i class="fa fa-bullhorn fa-fw"></i>
-					<a class="off" href="{{ news.url }}">
-					{{ news.title }}
-					</a>
-				</div>
-				<div class="note">
-					{{ news.content }}
-				</div>
-				<div class="smallspacer"></div>
-				<div class="smallnote">
-					Posted
-					{{ news.date | date_to_string }}
-					{% if author %}
-					by <a class="off" href="{{ author.url }}">{{ author.nickname }}</a>
-					{% endif %}						
-				</div>
-				<div class="spacer"></div>	
-				<div class="spacer"></div>				
-			{% endfor %}
-		</div>
-		<div class="bigspacer"></div>		
-	</div>
 	<div class="col-md-4">
 		<div class="head">
 			<a class="off" href="/blog/">Posts</a>
@@ -130,26 +93,34 @@ categories:
 	</div>
 	<div class="col-md-4">
 		<div class="head">
-			<a class="off" href="/papers/">Papers
-			</a>
+			<a class="off" href="/art/">Art</a>
 		</div>
 		<div class="bigspacer"></div>
-		<div class="feedbox pad-left">		
-			{% for paper in site.categories.papers limit:4 %}
+		<div class="feedbox pad-left">
+			{% for art in site.categories.art limit:4 %}
+			
+				{% for member in site.categories.team %}
+					{% if member.handle == art.author_handle %}
+						{% assign author = member %}
+					{% endif %}
+				{% endfor %}		
+				
 				<div class="note-title">
-					<i class="fa fa-file-text-o fa-fw"></i>
-					<a class="off" href="{{ paper.url }}">
-					{{ paper.title }}
+					<i class="fa fa-bullhorn fa-fw"></i>
+					<a class="off" href="{{ art.url }}">
+					{{ art.title }}
 					</a>
-					<br/>
-					<div class='shortref note'>
-					{{ paper.shortref }}
-					</div>
+				</div>
+				<div class="note">
+					{{ art.content }}
 				</div>
 				<div class="smallspacer"></div>
 				<div class="smallnote">
-					Published
-					{{ paper.date | date_to_string }}
+					Posted
+					{{ art.date | date_to_string }}
+					{% if author %}
+					by <a class="off" href="{{ author.url }}">{{ author.nickname }}</a>
+					{% endif %}						
 				</div>
 				<div class="spacer"></div>	
 				<div class="spacer"></div>				
